@@ -1,3 +1,15 @@
+"""
+sudo docker -d -p 5672:5672 rabbitmq 
+sudo docker ps
+pip install celery 
+celery -A {name_of_file} worker -l INFO 
+celery -A {name_of_file} worker --concurrency {number} -l INFO 
+celery -A {name_of_file} worker --concurrency {number} --soft_time_limit {second}-l INFO 
+celery -A {name_of_beat} baet -l INFO
+"""
+
+
+
 #1) Making a new file with name celery.py (in default app )
 #adding this cod to celery.py
 
