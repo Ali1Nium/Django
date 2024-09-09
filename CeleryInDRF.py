@@ -8,7 +8,25 @@ celery -A {name_of_file} worker --concurrency {number} --soft_time_limit {second
 celery -A {name_of_beat} baet -l INFO
 """
 
+"""
+Requirments.text ==> 
 
+amqp==5.2.0
+billiard==4.2.0
+celery==5.4.0
+click==8.1.7
+click-didyoumean==0.3.1
+click-plugins==1.1.1
+click-repl==0.3.0
+kombu==5.4.0
+prompt_toolkit==3.0.47
+python-dateutil==2.9.0.post0
+six==1.16.0
+tzdata==2024.1
+vine==5.1.0
+wcwidth==0.2.13
+
+"""
 
 #1) Making a new file with name celery.py (in default app )
 #adding this cod to celery.py
